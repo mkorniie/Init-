@@ -1,1 +1,5 @@
 ipconfig getifaddr en0
+
+# MAC address is an ETHERNET address. 
+# As in LINUX, you can write /sbin/ifconfig en0
+# 
