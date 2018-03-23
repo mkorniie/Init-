@@ -1,0 +1,4 @@
+ netstat -nr | grep default
+
+# routing table - таблица маршрутизации
+# показать все таблизы маршрутизации - netstat -nr
