@@ -1,0 +1,4 @@
+Файл, в котором лежит IP DNS сервера, называется host.
+Если загуглить текст задания "path of the file that contains the IP address of the DNS server"
+Можно найти ответ: 
+/etc/hosts

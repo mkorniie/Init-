@@ -1,0 +1,3 @@
+dig slash16.org | grep SERVER
+
+# был другой вариант - host slash16.org | grep 'has address'. Еще dig и nslookup вроде одинаковые. 
