@@ -1,1 +1,4 @@
-~/.ssh/authorized_keys
+1) First you might want to generate new keys:
+ssh-keygen -t rsa
+2) Then you will see teh generated keys at:
+~/.ssh/id_rsa
