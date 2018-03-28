@@ -1,12 +1,21 @@
 #!/bin/bash
 
-PATH=ls | grep crontmp
+FL="$(ls | grep crontmp)"
+PTH="$(pwd)"
+NAME="04"
+CRON_PATH="/etc/crontab"
 
-if [ PATH = "" ]; then
-	mai
-
-V0=md5sum crontmp | cut -d" " -f1
-V1=md5sum /tmp/crontab.SxZjPA/crontab | cut -d" " -f1
-
-echo "TEMP is $V0"
-echo "ORIG is $V1"
+if [ "${FL}" = "" ]; then
+	cat $CRON_PATH > crontmp
+	echo "0 0 * * * ${PTH}/$NAME " >> $CRON_PATH
+else
+	V0="$(md5sum crontmp | awk {'print $1'})"
+	V1="$(md5sum $CRON_PATH | awk {'print $1'})"
+	if [ "${V0}" != "${V1}" ]; then
+		echo "Crontab Changed!"
+		cat $CRON_PATH > crontmp
+		echo "Crontab changed" | mail -s"Crontab Changed!" root
+	else
+		echo "No change."
+	fi
+fi
