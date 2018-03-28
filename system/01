@@ -1,0 +1,4 @@
+1) Google : "find Debian version "
+2) https://linuxconfig.org/check-what-debian-version-you-are-running-on-your-linux-system
+3) ->>> "The easiest way on how to check what Debian version you are running is to simply read a content of /etc/issue file."\
+4) Get: "Debian GNU/Linux 9"

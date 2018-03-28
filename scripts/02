@@ -1,0 +1,3 @@
+apt-get update > /var/log/update_script.log 
+apt-get upgrade -u >> /var/log/update_script.log
+echo "0 4 * * 1 home/osboxes/Documents/02.sh" >> /tmp/crontab.SxZjPA/crontab

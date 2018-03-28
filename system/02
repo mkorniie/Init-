@@ -1,0 +1,4 @@
+su
+hostname new_name
+
+# Print "hostname" - we will see the current name

@@ -1,3 +1,3 @@
-dig slash16.org | grep SERVER
+dig slash16.org | grep SERVER | sed "s/;; //g"
 
 # был другой вариант - host slash16.org | grep 'has address'. Еще dig и nslookup вроде одинаковые. 

@@ -1,0 +1,5 @@
+We should modify the file with hostname:
+
+vi /etc/hostname
+
+Then it will be permanent (Source: https://www.cyberciti.biz/faq/debian-change-hostname-permanently/);

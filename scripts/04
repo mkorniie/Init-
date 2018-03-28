@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PATH=ls | grep crontmp
+
+if [ PATH = "" ]; then
+	mai
+
+V0=md5sum crontmp | cut -d" " -f1
+V1=md5sum /tmp/crontab.SxZjPA/crontab | cut -d" " -f1
+
+echo "TEMP is $V0"
+echo "ORIG is $V1"

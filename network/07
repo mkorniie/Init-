@@ -1,1 +1,4 @@
 nslookup slash16.com 8.8.8.8
+
+# Query - переводится как "отправлять запрос"
+# A DNS query is the process of a computer or networking device making an inquiry to get an IP address for a DNS name
